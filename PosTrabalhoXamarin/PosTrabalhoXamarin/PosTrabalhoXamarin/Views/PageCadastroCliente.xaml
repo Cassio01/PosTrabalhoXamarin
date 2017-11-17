@@ -15,6 +15,43 @@
                 <Button x:Name="Salvar" Text="Salvar" Command="{Binding SalvarClienteCommand}" Clicked="Salvar_Clicked"></Button>
 
             </StackLayout>
+            <StackLayout Padding="15,0">
+                <Label Text="Lista de Clientes" HorizontalOptions="StartAndExpand" FontAttributes="Bold" BackgroundColor="WhiteSmoke" 
+				TextColor="DarkBlue" FontSize="18"/>
+                <ListView x:Name="Clientes" ItemsSource="{Binding Clientes}" HasUnevenRows="True" Grid.Row="4">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.ContextActions>
+                                    <MenuItem Text="Excluir" Command="{Binding Source={x:Reference PageCadastroCliente}, 
+									Path=BindingContext.ExcluirClienteCommand}" CommandParameter="{Binding .}" ></MenuItem>
+                                    <MenuItem Text="Editar"  Command="{Binding Source={x:Reference PageCadastroCliente}, 
+									Path=BindingContext.EditarClienteCommand}" CommandParameter="{Binding .}"></MenuItem>
+
+                                </ViewCell.ContextActions>
+                                <ViewCell.View>
+                                    <Grid ColumnSpacing="0" RowSpacing="0" >
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Label Grid.Row="0"     Grid.Column="0" Text="{Binding Nome}"    FontAttributes="Bold"  FontSize="15"    TextColor="#065C2B"/>
+                                        <Label Grid.Row="1"     Grid.Column="0" Text="{Binding Cpf}" />
+                                        <Label Grid.Row="1"     Grid.Column="1" Text="{Binding Email}"         TextColor="Black"/>
+                                        <Label Grid.Row="1"     Grid.Column="2" Text="{Binding Telefone}"      TextColor="Black"/>
+                                    </Grid>
+
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
         </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>

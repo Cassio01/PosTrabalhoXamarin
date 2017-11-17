@@ -4,5 +4,6 @@
              x:Class="PosTrabalhoXamarin.Views.PageMenu">
     <ContentPage.ToolbarItems>
         <ToolbarItem Name="CadastroCliente" Text="Novo Cliente" Activated="CadastroCliente_Activated"></ToolbarItem>
+        <ToolbarItem Name="ListaCliente" Text="Clientes" Activated="ListaCliente_Activated"></ToolbarItem>
     </ContentPage.ToolbarItems>
 </ContentPage>

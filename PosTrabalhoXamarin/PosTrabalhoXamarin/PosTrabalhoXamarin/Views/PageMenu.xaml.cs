@@ -21,5 +21,10 @@ namespace PosTrabalhoXamarin.Views
         {
             Navigation.PushAsync(new PageCadastroCliente());
         }
+
+        private void ListaCliente_Activated(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new PageListaCliente());
+        }
     }
 }

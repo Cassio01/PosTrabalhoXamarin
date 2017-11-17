@@ -1,13 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PosTrabalhoXamarin.Views.PageListaCliente">
+             x:Class="PosTrabalhoXamarin.Views.PageListaCliente"
+             x:Name="PageListaCliente"
+              xmlns:convert="clr-namespace:assembly=PosTrabalhoXamarin">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="CadastroCliente" Text="Novo Cliente" Activated="CadastroCliente_Activated"></ToolbarItem>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
+       <StackLayout Padding="15,0">
+            <Label Text="Lista de Clientes" HorizontalOptions="StartAndExpand" FontAttributes="Bold" BackgroundColor="WhiteSmoke" 
+				TextColor="DarkBlue" FontSize="18"/>
             <ListView x:Name="Clientes" ItemsSource="{Binding Clientes}" HasUnevenRows="True" Grid.Row="4">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="Excluir" Command="{Binding Source={x:Reference PageListaCliente}, 
+									Path=BindingContext.ExcluirClienteCommand}" CommandParameter="{Binding .}" ></MenuItem>
+                                <MenuItem Text="Editar"  Command="{Binding Source={x:Reference PageListaCliente}, 
+									Path=BindingContext.EditarClienteCommand}" CommandParameter="{Binding .}"></MenuItem>
+                            </ViewCell.ContextActions>
                             <ViewCell.View>
                                 <Grid ColumnSpacing="0" RowSpacing="0" >
                                     <Grid.ColumnDefinitions>
