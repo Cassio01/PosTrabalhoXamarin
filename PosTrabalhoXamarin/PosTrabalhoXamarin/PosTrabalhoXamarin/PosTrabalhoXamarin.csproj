@@ -72,6 +72,9 @@
     <Compile Include="Views\PageMenu.xaml.cs">
       <DependentUpon>PageMenu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\SobreApp.xaml.cs">
+      <DependentUpon>SobreApp.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">
@@ -126,6 +129,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\PageListaCliente.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\SobreApp.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

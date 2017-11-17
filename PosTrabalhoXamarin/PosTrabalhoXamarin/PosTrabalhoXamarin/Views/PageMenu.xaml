@@ -3,7 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PosTrabalhoXamarin.Views.PageMenu">
     <ContentPage.ToolbarItems>
+       
         <ToolbarItem Name="CadastroCliente" Text="Novo Cliente" Activated="CadastroCliente_Activated"></ToolbarItem>
         <ToolbarItem Name="ListaCliente" Text="Clientes" Activated="ListaCliente_Activated"></ToolbarItem>
+        <ToolbarItem Name="SobreApp" Text="Sobre" Activated="SobreApp_Activated"></ToolbarItem>
+        
     </ContentPage.ToolbarItems>
+
+    <StackLayout Padding="10,10,10,10">
+        <Label Text="Trabalho do curso de Pós-Graduação, Desenvolvimento de Software Full Stack" Font="20" FontAttributes="Italic" TextColor="Black"
+               VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+        
+        <Label Text="Faculdade DELTA - Goiânia - GO" FontSize="Small" FontAttributes="Italic" TextColor="Blue" 
+               VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand"/>
+    </StackLayout>
 </ContentPage>

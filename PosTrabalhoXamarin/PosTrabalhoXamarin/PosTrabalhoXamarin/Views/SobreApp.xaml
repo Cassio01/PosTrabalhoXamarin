@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PosTrabalhoXamarin.Views.SobreApp">
+    <ContentPage.Content>
+        <StackLayout Padding="10,10,10,10">
+            <Label Text="Aplicativo simples, simulando cadastro de clientes, ferramenta utilizada: Xamarin.Forms e a IDE Visual Studio." Font="15" TextColor="Black"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Faculdade DELTA - Goiânia - GO" FontSize="Small" FontAttributes="Italic" TextColor="Blue" 
+               VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

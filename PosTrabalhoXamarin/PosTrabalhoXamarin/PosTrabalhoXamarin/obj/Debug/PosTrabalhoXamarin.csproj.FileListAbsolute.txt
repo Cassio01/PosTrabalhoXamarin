@@ -20,3 +20,4 @@ C:\Projetos\Mobile\Xamarin\PosTrabalhoXamarin\PosTrabalhoXamarin\PosTrabalhoXama
 C:\Projetos\Mobile\Xamarin\PosTrabalhoXamarin\PosTrabalhoXamarin\PosTrabalhoXamarin\obj\Debug\PosTrabalhoXamarin.pdb
 C:\Projetos\Mobile\Xamarin\PosTrabalhoXamarin\PosTrabalhoXamarin\PosTrabalhoXamarin\obj\Debug\PosTrabalhoXamarin.csprojResolveAssemblyReference.cache
 C:\Projetos\Mobile\Xamarin\PosTrabalhoXamarin\PosTrabalhoXamarin\PosTrabalhoXamarin\obj\Debug\PosTrabalhoXamarin.Views.PageListaCliente.xaml.g.cs
+C:\Projetos\Mobile\Xamarin\PosTrabalhoXamarin\PosTrabalhoXamarin\PosTrabalhoXamarin\obj\Debug\PosTrabalhoXamarin.Views.SobreApp.xaml.g.cs

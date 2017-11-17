@@ -26,5 +26,10 @@ namespace PosTrabalhoXamarin.Views
         {
             Navigation.PushAsync(new PageListaCliente());
         }
+
+        private void SobreApp_Activated(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SobreApp());
+        }
     }
 }
